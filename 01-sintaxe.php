@@ -20,6 +20,8 @@
         //Geração de texto estruturado (Com tags e atributos)
         echo "<h2>Gerando <span class='destaque'>HTML</span> através do PHP.</h2>";
         // echo "<h2>Gerando <span class=\"destaque\">HTML</span> através do PHP.</h2>"; - asspas duplas dentro de outra aspas duplas com escape - barras invertidas antes das aspas
+
+        echo "Oi GitHub :)"
     ?>
     
 </body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - PHP</title>
+</head>
+<body>
+    <form method="post" action="processa-post.php">
+    <fieldset>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="1" max="100">
+        </p>
+        <div>
+            <p>Interesses: <br></p>
+            <!-- Name precisa ser igual e id diferente neste type = checkbox. name igual para indicar que eles estão relacionados -->
+            <!-- checkbox - opções de múltiplas escolhas -->
+            <input type="checkbox" name="interesses[]" id="html" value="HTML"> 
+            <label for="html">HTML</label>
+            <input type="checkbox" name="interesses[]" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="interesses[]" id="js" value="JS">
+            <label for="js">JS</label>
+        </div>
+
+        <div>
+            <!-- input:radip -> opção única/exclusiva -->
+            <p>Deseja receber informartivos? <hr></p>
+            <input type="radio" name="informativos" id="sim" value="Sim">
+            <label for="sim">Sim</label>
+            <input type="radio" name="informativos" id="nao" value="Não">
+            <label for="nao">Não</label>
+        </div>
+        <p>
+            <label for="email">E-mail:</label>
+            <input  type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="messagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+        </p>
+        <p>
+          <button type="submit" name="enviar">Enviar</button>
+        </p>
+    </fieldset>
+    </form>
+
+   
+    
+</body>
+</html>

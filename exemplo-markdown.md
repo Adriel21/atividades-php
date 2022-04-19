@@ -38,4 +38,12 @@ echo $aluno;
 ```
 
 ## Imagens
+![LogotipoPHP](php-logo.png)
 
+## Caixas de seleção
+
+### Lista de tarefas
+
+- [] Briefing
+- [x] Rascunhos
+- [] Design
